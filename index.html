@@ -72,7 +72,7 @@
                 </div>
             </div>
             
-            <a href="https://wa.me/15998588492?text=Quero%20participar%20do%20curso%20com%20o%20desconto%20especial!" 
+            <a onclick="enviarMensagem()" 
                target="_blank" 
                class="interactive-btn text-white font-bold py-6 px-12 rounded-full text-2xl shadow-2xl relative">
                 <span class="relative z-10">GARANTIR MINHA VAGA AGORA 🚀</span>
@@ -82,6 +82,19 @@
             </a>
         </div>
     </div>
+    <script>
+        function enviarMensagem() {
+            // Substitua 'seu_usuario' pelo seu @ do Instagram e personalize a mensagem
+            const usuario = 'iago_souza.ofc';
+            const mensagem = encodeURIComponent('Quero garantir minha vaga agora!');
+
+            // Monta o link para a DM com mensagem
+            const url = `https://www.instagram.com/direct/t/${usuario}?text=${mensagem}`;
+            
+            // Redireciona para a DM
+            window.location.href = url;
+        }
+    </script>
 
     <!-- Rodapé -->
     <footer class="bg-slate-900 py-6">
